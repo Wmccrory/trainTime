@@ -46,6 +46,12 @@ input[type=submit] {
 	margin-top: 0.5em;
 }
 
+/*footer*/
+footer {
+	background: #BF5700;
+	padding: 0.5em;
+}
+
 /*Font Rules*/
 h1 {
 	font-size: 3em;
@@ -60,6 +66,10 @@ h2 {
 h3 {
 	background-color: #6d84b4;
 	padding: .5em;
+}
+
+h6 {
+	font-size: 0.75em;
 }
 
 th {
