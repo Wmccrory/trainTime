@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Train Time!" content="Example web app utilizing firebase to create a persistent database of train schedules entered by users">
 	<title>Train Time!</title>
-	<link rel="icon" href="assets/images/favicon.png">
+	<link rel="icon" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -19,8 +19,9 @@
 
 <div class = "contentDisplay">
 	<h3>Current Train Schedule</h3>
-	<div id = "trainSchedule">
-		<table>
+	<div>
+		<table id = "trainSchedule">
+			<thead>
 			<tr>
 				<th>Train Name</th>
 				<th>Destination</th>
@@ -28,13 +29,12 @@
 				<th>Next Arrival</th>
 				<th>Minutes Away</th>
 			</tr>
+			</thead>
+
+			<tbody>
 			<tr>
-				<td>Test Train</td>
-				<td>Nunya Business</td>
-				<td>10</td>
-				<td>soon</td>
-				<td>10</td>
 			</tr>
+			</tbody>
 		</table>
 	</div>
 </div>
@@ -58,7 +58,7 @@
 		<br>
 		<input type="number" id="trainFreq" name="trainFreq">
 		<br>
-		<input type="submit" value="Submit">
+		<input id = "submitbtn" type="submit" value="submit">
 	</form>
 </div>
 <footer>
